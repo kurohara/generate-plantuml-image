@@ -11,6 +11,7 @@ jobs:
         with:
           node-version: '18'
       - uses: ts-graphviz/setup-graphviz@v1
+      - run: sudo apt install default-jdk;sudo apt-get install fonts-ipafont fonts-ipaexfont
       - run: awk \
           '
           BEGIN {count = 0;}
