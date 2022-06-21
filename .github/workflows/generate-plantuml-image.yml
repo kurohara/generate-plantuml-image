@@ -34,13 +34,10 @@ jobs:
       - run: for fn in `ls tmp*.puml`;do
             imgname=`echo $fn | sed -e 's/^tmp/fig/' -e 's/puml$/png/'`;
             echo "$fn ==> $imgname" ;
-            npx node-plantuml generate $fn -p -o .github/$imgname;
+            LANG=ja_JP.utf8 npx node-plantuml generate $fn -p -o .github/$imgname;
           done
       - run: rm tmp*.puml
       - uses: EndBug/add-and-commit@v9
         with: 
           add: '.github'
-      - uses: actions-go/push@master
-        with:
-          commit-message: '[Auto] generated uml diagrams.'
-          remote: origin
+          message: '[Auto] generated uml diagrams.'

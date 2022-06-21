@@ -25,9 +25,7 @@ githubがmermaidをサポートしてREADMEで作図がしやすくなったが�
 
 
 ```plantuml
-
 alice -> bob:test
-
 ```
 
 ```plantuml
