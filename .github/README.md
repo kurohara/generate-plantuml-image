@@ -12,9 +12,9 @@ githubがmermaidをサポートしてREADMEで作図がしやすくなったが�
 これはREADMEの更新時だけの問題なので、READMEが安定すれば事前のpullやmergeなどの面倒臭さは減るはず。  
 
 
-現時点で一応Actionsのスクリプトは完成したが、なぜか手元のnode-plantumlよりActionsのnode-plantumlがサポートしている図形が少ないようで、あまり上手く動作しない。  （sequenceは書かれるが、use-caseがエラーになる)  
+~~現時点で一応Actionsのスクリプトは完成したが、なぜか手元のnode-plantumlよりActionsのnode-plantumlがサポートしている図形が少ないようで、あまり上手く動作しない。  （sequenceは書かれるが、use-caseがエラーになる)~~
 
-手元ではVSCodeのpreviewプラグインで普通にレンダリングできているのだが。
+~~手元ではVSCodeのpreviewプラグインで普通にレンダリングできているのだが。~~
 
 ![screen](/screen1.png)
 
