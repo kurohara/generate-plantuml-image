@@ -18,10 +18,11 @@ githubがmermaidをサポートしてREADMEで作図がしやすくなったが�
 
 ![screen](/screen1.png)
 
-## ユースケース
+普通に一人で作業するリポジトリなら、各人の作業環境を考慮する必要がないので、手元でスクリプトを使用して ./.github/README.mdとイメージファイルを生成した方が早い。  
+そのような用途のために、workflowを genplantuml.sh に切り出した。  
 
-* WEBサイトで入力 -> DB -> 各社フォーマット（Excel/PDF）に変換
-* 既存のExcelから読み取り -> DB -> 各社フォーマット(Excel/PDF)に変換
+## サンプル
+
 
 ```plantuml
 
