@@ -11,15 +11,10 @@ githubがmermaidをサポートしてREADMEで作図がしやすくなったが�
 このやり方の欠点は、ローカルのリポジトリが毎回pushするたびにbehindになってしまうことで、手元の作業後にcommitする前にpullしておかないとconflictが発生してしまう。  
 これはREADMEの更新時だけの問題なので、READMEが安定すれば事前のpullやmergeなどの面倒臭さは減るはず。  
 
-
-~~現時点で一応Actionsのスクリプトは完成したが、なぜか手元のnode-plantumlよりActionsのnode-plantumlがサポートしている図形が少ないようで、あまり上手く動作しない。  （sequenceは書かれるが、use-caseがエラーになる)~~
-
-~~手元ではVSCodeのpreviewプラグインで普通にレンダリングできているのだが。~~
-
 ![screen](/screen1.png)
 
 普通に一人で作業するリポジトリなら、各人の作業環境を考慮する必要がないので、手元でスクリプトを使用して ./.github/README.mdとイメージファイルを生成した方が早い。  
-そのような用途のために、workflowを genplantuml.sh に切り出した。  
+そのような用途のために、action内の生成処理を genplantuml.sh に切り出した。  
 
 ## サンプル
 
